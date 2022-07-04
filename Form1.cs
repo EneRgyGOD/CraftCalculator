@@ -9,11 +9,12 @@ namespace CraftCalculator
 
         private void CalculateItem(object sender, EventArgs e)
         {
-            CraftMechanism mechanism = new();
+            CraftMechanism CraftMechanism = new();
 
-            mechanism.GenerateResources();
+            CraftMechanism.GenerateResources();
 
-            mechanism.Craft();
+            CraftMechanism.Craft("bebra", 1);
+            CraftMechanism.Craft("Stone Pickaxe", 2);
         }
     }
 }
